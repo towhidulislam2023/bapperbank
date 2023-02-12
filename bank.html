@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BApperBankDashBOard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semi-bold mt-9 text-black text-center">
+          Wellcome to <span class= " text-6xl font-bold text-purple-600">BAPPER BANK</span> 
+        </h1>
+        <h1 class="text-5xl font-semi-bold mt-9 text-black text-center">
+           <span class= " text-3xl font-bold text-purple-600">Bank Dashboard</span> 
+        </h1>
+      </header>
+  </h1>
+  <main class=" w-9/12 mx-auto mt-20">
+    <section class=" grid grid-cols-1 md:grid-cols-3  gap-8 mb-20"> 
+        <div id="deposit" class="bg-amber-600 rounded-md p-16">
+            <h3 class="text-4xl">Deposit</h3>
+            <p class="text-6xl break-words text-white">$<span id="privaousAmount">00</span></p>
+
+        </div>
+        <div id="withdraw" class="bg-lime-500 rounded-md p-16">
+            <h3 class="text-4xl">Withdraw</h3>
+            <h1 class="text-6xl text-white break-words">$<span id="privaousWithdrAwmount" >00</span></h1>
+
+        </div>
+
+        <div id="totalAmount" class="bg-blue-400 rounded-md p-16">
+            <h3 class="text-4xl">Total Amount</h3>
+            <h1  class="text-6xl text-white break-words">$<span id="priviousTotalAmount">00</span></h1>
+
+        </div>
+    </section>
+    <section class="mb-52">
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Deposit area  -->
+        <div class=" bg-lime-700 p-5 md:p-16 rounded-lg" id="depositArea">
+            <h1 class="text-4xl mb-7 text-white font-semibold " >Input Your Deposit Amount</h1>
+            <input type="text" class=" md:w-9/12 px-4 py-2 rounded-sm mb-9 outline-none block" name="" id="depositAmount" placeholder="$ Enter Your Deposit Amount">
+            <button id="depositBtn" class="bg-yellow-600 px-8 py-3 rounded-lg text-2xl text-white font-semibold hover:bg-yellow-500">Deposit</button>
+        </div>
+        <!-- withdraw area  -->
+        <div class=" bg-yellow-700 p-5 md:p-16 rounded-lg" id="withdrawAreac">
+            <h1 class="text-4xl mb-7 text-white font-semibold ">Input Your Withdraw Amount</h1>
+            <input type="text" class="md:w-9/12 px-4 py-2 rounded-sm mb-9 outline-none block" name="" id="withdrawAmount" placeholder="$ Enter Your Withdraw Amount">
+            <button class="bg-lime-600 px-8 py-3 rounded-lg text-2xl text-white font-semibold hover:bg-lime-500" id="withdrawBtn">Withdraw</button>
+        </div>
+
+       </div>
+    </section>
+
+  </main>
+
+
+
+  <script src="./js/bankdashboard.js"></script>
+</body>
+</html>
